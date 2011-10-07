@@ -1,0 +1,6 @@
+Sub-modulo para o VRaptor 3.4.0. Implementação alternativa para a annotation @Load feita pelo Lucas - Caelum.
+
+A annotation @LoadObject é somente uma alternativa a implementação da annotation @Load feita pelo Lucas na versão 3.4.0. Esta implementação contém dois parametros para a annotation @LoadObject, que são os seguintes:
+1) required (boolean) - caso seja true e o objeto não seja encontrado pelo parâmetro informado na URL, caso não seja informado o 'redirectToWhenObjectNotFound' o fluxo de execução retornará 404 (Result.nothing()).
+
+2) redirectToWhenObjectNotFound (String) - um fluxo aternativo para redicionar a página caso o objeto consultado pelo parâmetro da URL não seja encontrado. Para redirecionar o parâmetro 'required' da annotation deve estar como 'true'.
